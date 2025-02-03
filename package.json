@@ -1,0 +1,15 @@
+{
+  "name": "elevatefund",
+  "version": "1.0.0",
+  "description": "ElevateFund - Connecting Entrepreneurs with Investors",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
+    "start": "concurrently \"cd frontend && npm run preview\" \"cd backend && npm start\"",
+    "build": "cd frontend && npm run build",
+    "install-deps": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\"",
+    "install-all": "npm install && npm run install-deps"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

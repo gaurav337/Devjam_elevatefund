@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6366F1" />
+    <meta
+      name="description"
+      content="ElevateFund - Connecting Entrepreneurs with Investors"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <title>ElevateFund</title>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        document.documentElement.classList.remove('light')
+      } else {
+        document.documentElement.classList.add('light')
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-background font-sans antialiased">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

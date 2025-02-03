@@ -1,0 +1,16 @@
+{
+  "name": "ElevateFund",
+  "short_name": "ElevateFund",
+  "description": "Connecting Entrepreneurs with Investors",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366F1",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+} 
